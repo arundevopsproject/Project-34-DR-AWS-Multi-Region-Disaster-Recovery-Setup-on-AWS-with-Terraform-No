@@ -1,11 +1,27 @@
 # Multi-Region Disaster Recovery Setup
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Copubah/aws-multi-region-disaster-recovery)
+[![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.0-623CE4?logo=terraform)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-Multi--Region-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 This Terraform configuration sets up a multi-region disaster recovery infrastructure on AWS with the following components:
+
+## Clone Repository
+
+```bash
+# Clone the repository
+git clone https://github.com/Copubah/aws-multi-region-disaster-recovery.git
+cd aws-multi-region-disaster-recovery
+
+# Quick setup
+make setup
+```
 
 ## Architecture Overview
 
-- **Primary Region**: us-east-1
-- **DR Region**: eu-west-1
+- Primary Region: us-east-1
+- DR Region: eu-west-1
 
 ```
                                     ┌─────────────────────────────────────┐
@@ -86,11 +102,11 @@ This Terraform configuration sets up a multi-region disaster recovery infrastruc
 
 ### Data Flow & Failover Process
 
-1. **Normal Operation**: Traffic routes to Primary Region (us-east-1)
-2. **Health Check**: Route 53 monitors primary ALB health every 30 seconds
-3. **Failure Detection**: If 3 consecutive health checks fail, Route 53 triggers failover
-4. **Automatic Failover**: DNS routes traffic to DR Region (eu-west-1)
-5. **Data Consistency**: S3 replication ensures data availability, RDS replica provides read access
+1. Normal Operation: Traffic routes to Primary Region (us-east-1)
+2. Health Check: Route 53 monitors primary ALB health every 30 seconds
+3. Failure Detection: If 3 consecutive health checks fail, Route 53 triggers failover
+4. Automatic Failover: DNS routes traffic to DR Region (eu-west-1)
+5. Data Consistency: S3 replication ensures data availability, RDS replica provides read access
 
 ## Components
 
@@ -128,6 +144,17 @@ This Terraform configuration sets up a multi-region disaster recovery infrastruc
 
 ## Deployment
 
+### Option 1: Using Makefile (Recommended)
+```bash
+# Clone the repository
+git clone https://github.com/Copubah/aws-multi-region-disaster-recovery.git
+cd aws-multi-region-disaster-recovery
+
+# Complete setup
+make setup
+```
+
+### Option 2: Manual Terraform Commands
 1. Initialize Terraform:
 ```bash
 terraform init
@@ -174,3 +201,21 @@ The setup includes automated failover capabilities. To test:
 - IAM roles follow least privilege principle
 - VPC endpoints for secure AWS service access
 - Security groups restrict access to necessary ports only
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Repository
+
+- GitHub: https://github.com/Copubah/aws-multi-region-disaster-recovery
+- Issues: https://github.com/Copubah/aws-multi-region-disaster-recovery/issues
+- Discussions: https://github.com/Copubah/aws-multi-region-disaster-recovery/discussions
+
+## Support
+
+If you find this project helpful, please consider giving it a star on GitHub!

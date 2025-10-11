@@ -1,11 +1,23 @@
 # Contributing to AWS Multi-Region Disaster Recovery
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Copubah/aws-multi-region-disaster-recovery)
+
 Thank you for your interest in contributing to this project! This document provides guidelines for contributing to the AWS Multi-Region Disaster Recovery setup.
+
+## Repository
+
+- Main Repository: https://github.com/Copubah/aws-multi-region-disaster-recovery
+- Issues: https://github.com/Copubah/aws-multi-region-disaster-recovery/issues
+- Discussions: https://github.com/Copubah/aws-multi-region-disaster-recovery/discussions
 
 ## Getting Started
 
-1. Fork the repository
-2. Clone your fork locally
+1. Fork the repository: https://github.com/Copubah/aws-multi-region-disaster-recovery/fork
+2. Clone your fork locally:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/aws-multi-region-disaster-recovery.git
+   cd aws-multi-region-disaster-recovery
+   ```
 3. Create a new branch for your feature or bug fix
 4. Make your changes
 5. Test your changes thoroughly
@@ -78,12 +90,12 @@ Before submitting a PR, ensure:
 
 ## Pull Request Process
 
-1. **Branch Naming**: Use descriptive branch names
+1. Branch Naming: Use descriptive branch names
    - `feature/add-monitoring`
    - `fix/rds-security-group`
    - `docs/update-readme`
 
-2. **Commit Messages**: Use clear, descriptive commit messages
+2. Commit Messages: Use clear, descriptive commit messages
    ```
    feat: add CloudWatch dashboard for monitoring
    
@@ -92,14 +104,14 @@ Before submitting a PR, ensure:
    - Update documentation with dashboard screenshots
    ```
 
-3. **PR Description**: Include:
+3. PR Description: Include:
    - What changes were made
    - Why the changes were necessary
    - How to test the changes
    - Any breaking changes
    - Screenshots (if applicable)
 
-4. **Review Process**:
+4. Review Process:
    - All PRs require review
    - Address feedback promptly
    - Keep PRs focused and reasonably sized
@@ -138,6 +150,10 @@ Before submitting a PR, ensure:
 - Enable encryption for all data
 
 ## Questions and Support
+
+- Issues: https://github.com/Copubah/aws-multi-region-disaster-recovery/issues
+- Discussions: https://github.com/Copubah/aws-multi-region-disaster-recovery/discussions
+- Pull Requests: https://github.com/Copubah/aws-multi-region-disaster-recovery/pulls
 
 - Open an issue for bugs or feature requests
 - Use discussions for questions and ideas

@@ -30,7 +30,7 @@ print_info() {
 REPO_NAME="aws-multi-region-disaster-recovery"
 REPO_DESCRIPTION="Multi-Region Disaster Recovery setup on AWS using Terraform with automated failover, cross-region replication, and comprehensive monitoring"
 
-echo "🚀 GitHub Repository Creation Script"
+echo "GitHub Repository Creation Script"
 echo "=================================="
 echo
 
@@ -38,9 +38,9 @@ echo
 if ! command -v gh &> /dev/null; then
     print_warning "GitHub CLI (gh) is not installed."
     print_info "You can install it with:"
-    echo "  • Ubuntu/Debian: sudo apt install gh"
-    echo "  • macOS: brew install gh"
-    echo "  • Or download from: https://cli.github.com/"
+    echo "  - Ubuntu/Debian: sudo apt install gh"
+    echo "  - macOS: brew install gh"
+    echo "  - Or download from: https://cli.github.com/"
     echo
     print_info "Alternatively, create the repository manually:"
     echo "1. Go to https://github.com/new"
@@ -94,7 +94,7 @@ else
         --source=. \
         --push
     
-    print_status "✅ Repository created and code pushed!"
+    print_status "Repository created and code pushed!"
 fi
 
 # Add remote if it doesn't exist
@@ -119,14 +119,14 @@ gh repo edit --add-topic multi-region
 gh repo edit --add-topic devops
 gh repo edit --add-topic cloud
 
-print_status "✅ Repository setup complete!"
+print_status "Repository setup complete!"
 echo
 print_info "Repository URL: https://github.com/$GITHUB_USER/$REPO_NAME"
 print_info "Clone URL: git clone https://github.com/$GITHUB_USER/$REPO_NAME.git"
 echo
 print_status "Next steps:"
-echo "1. ⭐ Star the repository if you find it useful"
-echo "2. 📝 Update terraform.tfvars with your values"
-echo "3. 🚀 Deploy with: make setup"
-echo "4. 📊 Monitor your infrastructure"
-echo "5. 🔄 Test failover scenarios"
+echo "1. Star the repository if you find it useful"
+echo "2. Update terraform.tfvars with your values"
+echo "3. Deploy with: make setup"
+echo "4. Monitor your infrastructure"
+echo "5. Test failover scenarios"

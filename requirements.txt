@@ -1,5 +1,11 @@
 # AWS Multi-Region Disaster Recovery - Requirements
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Copubah/aws-multi-region-disaster-recovery)
+
+## Repository
+- GitHub: https://github.com/Copubah/aws-multi-region-disaster-recovery
+- Clone: `git clone https://github.com/Copubah/aws-multi-region-disaster-recovery.git`
+
 ## Required Tools and Dependencies
 
 ### Core Infrastructure Tools

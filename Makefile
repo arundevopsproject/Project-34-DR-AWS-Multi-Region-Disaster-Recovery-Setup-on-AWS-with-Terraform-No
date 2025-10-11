@@ -1,10 +1,12 @@
 # AWS Multi-Region Disaster Recovery - Makefile
+# Repository: https://github.com/Copubah/aws-multi-region-disaster-recovery
 
 .PHONY: help init plan apply destroy validate format clean check-aws
 
 # Default target
 help: ## Show this help message
 	@echo "AWS Multi-Region Disaster Recovery - Available Commands:"
+	@echo "Repository: https://github.com/Copubah/aws-multi-region-disaster-recovery"
 	@echo ""
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 

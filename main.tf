@@ -1,3 +1,6 @@
+# AWS Multi-Region Disaster Recovery Setup
+# Repository: https://github.com/Copubah/aws-multi-region-disaster-recovery
+
 terraform {
   required_version = ">= 1.0"
   required_providers {
