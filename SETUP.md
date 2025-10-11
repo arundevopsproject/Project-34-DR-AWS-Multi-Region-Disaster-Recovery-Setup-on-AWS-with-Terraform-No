@@ -4,9 +4,9 @@
 
 The AWS Multi-Region Disaster Recovery setup is now available on GitHub:
 
-**Repository URL**: https://github.com/Copubah/aws-multi-region-disaster-recovery
+## Repository URL: https://github.com/Copubah/aws-multi-region-disaster-recovery
 
-##  Quick Start for New Users
+## Quick Start for New Users
 
 ```bash
 # Clone the repository
