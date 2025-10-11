@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Region DR Application</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .status { padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .primary { background-color: #d4edda; border: 1px solid #c3e6cb; }
+        .secondary { background-color: #fff3cd; border: 1px solid #ffeaa7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Region Disaster Recovery Application</h1>
+        <div class="status primary">
+            <h2>Primary Region (us-east-1)</h2>
+            <p>This application is running in the primary region.</p>
+            <p>Automatic failover to eu-west-1 is configured via Route 53.</p>
+        </div>
+        <div class="status secondary">
+            <h2>Features</h2>
+            <ul>
+                <li>Cross-region S3 replication</li>
+                <li>RDS read replica in DR region</li>
+                <li>ECS Fargate with auto-scaling</li>
+                <li>Route 53 health checks and failover</li>
+                <li>Comprehensive monitoring and alerting</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
