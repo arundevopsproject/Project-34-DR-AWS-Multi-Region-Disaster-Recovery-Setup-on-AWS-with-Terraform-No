@@ -1,0 +1,68 @@
+# AWS Multi-Region Disaster Recovery - Requirements
+
+## Required Tools and Dependencies
+
+### Core Infrastructure Tools
+- Terraform >= 1.0
+- AWS CLI >= 2.0
+- Docker >= 20.0
+
+### AWS Services Used
+- VPC (Virtual Private Cloud)
+- EC2 (Elastic Compute Cloud)
+- ECS (Elastic Container Service)
+- RDS (Relational Database Service)
+- S3 (Simple Storage Service)
+- Route 53 (DNS Service)
+- Application Load Balancer (ALB)
+- CloudWatch (Monitoring)
+- KMS (Key Management Service)
+- IAM (Identity and Access Management)
+- Secrets Manager
+
+### Optional Tools for Development
+- Git >= 2.0
+- Make (for automation)
+- jq (for JSON processing)
+- curl (for testing endpoints)
+
+### AWS CLI Configuration
+Ensure AWS CLI is configured with appropriate permissions:
+```bash
+aws configure
+```
+
+Required AWS permissions:
+- EC2FullAccess
+- VPCFullAccess
+- RDSFullAccess
+- S3FullAccess
+- Route53FullAccess
+- ECSFullAccess
+- IAMFullAccess
+- CloudWatchFullAccess
+- KMSFullAccess
+- SecretsManagerFullAccess
+
+### Terraform Providers
+- hashicorp/aws ~> 5.0
+- hashicorp/random ~> 3.0
+
+### Container Registry
+- AWS ECR (Elastic Container Registry) or Docker Hub for container images
+
+### Monitoring and Alerting
+- CloudWatch Logs
+- CloudWatch Metrics
+- CloudWatch Alarms
+- SNS (Simple Notification Service) - for alerts (optional)
+
+### Cost Estimation
+Use AWS Pricing Calculator to estimate costs:
+- https://calculator.aws/
+
+### Security Tools (Recommended)
+- AWS Config (for compliance)
+- AWS CloudTrail (for auditing)
+- AWS GuardDuty (for threat detection)
+- Terraform security scanning tools (tfsec, checkov)

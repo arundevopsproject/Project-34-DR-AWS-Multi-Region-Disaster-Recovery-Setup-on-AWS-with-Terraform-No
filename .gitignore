@@ -6,23 +6,155 @@
 !terraform.tfvars.example
 .terraform/
 .terraform.lock.hcl
+terraform.rc
+.terraformrc
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terragrunt-cache/
 
 # AWS files
 .aws/
+*.pem
+*.key
+credentials
 
-# IDE files
+# IDE and Editor files
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+.project
+.settings/
+.classpath
+*.sublime-project
+*.sublime-workspace
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
 # Logs
 *.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Temporary files
 *.tmp
 *.temp
+.cache/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+target/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Security and sensitive files
+*.p12
+*.pfx
+*.crt
+*.csr
+*.key
+*.pub
+secrets.yml
+secrets.yaml
+.secrets/
+
+# Local configuration
+local.properties
+.local/
+
+# Test results
+test-results/
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
