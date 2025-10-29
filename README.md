@@ -4,7 +4,6 @@ https://dev.to/copubah/building-a-multi-region-disaster-recovery-setup-on-aws-wi
 
 
 
-
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Copubah/aws-multi-region-disaster-recovery)
 [![Terraform](https://img.shields.io/badge/Terraform-%3E%3D1.0-623CE4?logo=terraform)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-Multi--Region-FF9900?logo=amazon-aws)](https://aws.amazon.com/)
